@@ -3,6 +3,7 @@ import './globals.css'
 import { FileProvider } from './contexts/FileContext';
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -18,9 +19,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
 
         <FileProvider>
-          {children}
-        </FileProvider>
+            <div className='gradient' />
+            {children}
 
+        </FileProvider>
 
       </body>
     </html>

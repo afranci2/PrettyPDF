@@ -11,7 +11,7 @@ const FileImport = () => {
     const [fileName, setFileName] = useState('');
     const [fileSelected, setFileSelected] = useState(false);
     const { setFile } = useContext(FileContext);
-    
+
     const handleFileChange = (event) => {
         const file = event.target.files[0];
         if (file) {
@@ -27,7 +27,7 @@ const FileImport = () => {
     const uploadButton = (
         <button
             type="submit"
-            className='px-8 py-3 bg-black text-white font-semibold rounded-full hover:bg-white hover:text-black transition-colors'
+            className='px-8 py-3 bg-black text-white font-semibold rounded-full hover:bg-blue-700 transition-colors'
             disabled={!fileSelected}
         >
             Upload
@@ -42,23 +42,22 @@ const FileImport = () => {
             </h2>
 
             <div className='flex flex-col items-center gap-4'>
-                <label
-                    htmlFor='file-upload'
-                    className={`block text-lg font-medium px-6 py-2 rounded-full transition-all cursor-pointer ${fileSelected ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'}`}
-                >
-                    {fileName || "Select File"}
-                </label>
-                <input
-                    type="file"
-                    id="file-upload"
-                    onChange={handleFileChange}
-                    className='hidden'
-                />
-                {fileSelected ? (
-                    <Link href='/home'>{uploadButton}</Link>
-                ) : (
-                    uploadButton
-                )}
+                    <label
+                        htmlFor='file-upload'
+                        className={`block text-lg font-medium px-6 py-2 rounded-full transition-all cursor-pointer ${fileSelected ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'}`}>
+                        {fileName || "Select File"}
+                    </label>
+                    <input
+                        type="file"
+                        id="file-upload"
+                        onChange={handleFileChange}
+                        className='hidden'
+                    />
+                    {fileSelected ? (
+                        <Link href='/home'>{uploadButton}</Link>
+                    ) : (
+                        uploadButton
+                    )}
             </div>
         </div>
 
