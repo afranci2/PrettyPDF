@@ -24,7 +24,7 @@ const HeroButton = () => {
 
 
             )}
-            {status !== 'authenticated' && (
+            {status === 'unauthenticated' && (
                 <div>
                     <Link className='gap-4 px-4 text-gray-500 font-semibold' href="/login">Login</Link>
 
