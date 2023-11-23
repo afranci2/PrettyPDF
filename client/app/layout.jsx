@@ -23,7 +23,11 @@ export default function RootLayout({ children }) {
           <AppProvider>
 
             <div className='gradient' />
-            {children}
+            <div className='relative z-10 flex justify-center  flex-col max-w-7xl mx-auto sm:px-16 px-6;
+'>
+
+              {children}
+            </div >
           </AppProvider>
 
         </FileProvider>

@@ -8,9 +8,7 @@ export default function Home() {
     <main>
 
 
-      <div className='app'>
         <Hero />
-      </div>
     </main>
   )
 }

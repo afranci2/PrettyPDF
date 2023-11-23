@@ -17,9 +17,13 @@ const HeroButton = () => {
         <div>
             {status === 'authenticated' && (
                 <button
-                    onClick={() => signOut()}>
 
-                    Logout
+                    onClick={() => signOut()}>
+                    <div className='black_btn'
+                    >
+                        Logout
+                        
+                    </div>
                 </button>
 
 
