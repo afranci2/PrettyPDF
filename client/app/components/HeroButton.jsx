@@ -1,47 +1,30 @@
 "use client"
-import React from 'react'
-import Image from 'next/image'
-import logo from '../assets/icon.png'
-
+import React from 'react';
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
-import { useContext, useState } from "react";
 
 const HeroButton = () => {
-    const session = useSession();
-    const status = session?.status;
-    const userData = session.data?.user;
-    let userName = userData?.name || userData?.email;
-    console.log(status)
+    const { data: sessionData, status } = useSession();
+    
     return (
         <div>
-            {status === 'authenticated' && (
-                <button
-
-                    onClick={() => signOut()}>
-                    <div className='black_btn'
-                    >
-                        Logout
-                        
-                    </div>
+            {status === 'authenticated' ? (
+                <button onClick={() => signOut()} className='black_btn'>
+                    Logout
                 </button>
-
-
-            )}
-            {status === 'unauthenticated' && (
+            ) : (
                 <div>
-                    <Link className='gap-4 px-4 text-gray-500 font-semibold' href="/login">Login</Link>
+                    <Link href="/login">
+                        <a className='gap-4 px-4 text-gray-500 font-semibold'>Login</a>
+                    </Link>
 
-                    <Link
-                        href="/register"
-                        className='black_btn'
-                    >
-                        Register
+                    <Link href="/register">
+                        <a className='black_btn'>Register</a>
                     </Link>
                 </div>
             )}
         </div>
-    )
+    );
 }
 
-export default HeroButton
+export default HeroButton;

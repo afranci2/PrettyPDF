@@ -34,9 +34,9 @@ const Page = () => {
     }
 
     return (
-        <div className=" flex flex-col justify-center items-center bg-gray-100">
+        <div className=" flex flex-col justify-center items-center ">
             <Header />
-            <div className="z-10 w-full max-w-sm p-4 bg-white rounded-lg shadow-md">
+            <div className="z-10 w-full max-w-sm p-4 bg-white rounded-lg shadow-xl">
                 <h1 className="text-center text-3xl text-primary mb-4">
                     Register
                 </h1>
