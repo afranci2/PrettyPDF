@@ -1,6 +1,8 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { FileProvider } from './contexts/FileContext';
+import { AppProvider } from './components/AppContext';
+import { SessionProvider } from 'next-auth/react';
 
 
 
@@ -17,13 +19,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
       <body className={inter.className}>
-
         <FileProvider>
+          <AppProvider>
+
             <div className='gradient' />
             {children}
+          </AppProvider>
 
         </FileProvider>
-
       </body>
     </html>
   )

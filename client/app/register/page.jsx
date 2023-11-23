@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { signIn } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
+import Google from '../assets/google.png'
 
 const Page = () => {
     const [email, setEmail] = useState('');
@@ -84,9 +85,8 @@ const Page = () => {
                 </div>
                 <button
                     onClick={() => signIn('google', { callbackUrl: '/' })}
-                    className="flex items-center justify-center w-full px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                >
-                    <Image src="/google.png" alt="" width={24} height={24} />
+                    className="flex items-center justify-center w-full px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-gray-100 focus:outline-none focus:bg-gray-100">
+                    <Image src={Google} alt=""  className='px-2 w-10'/>
                     Login with Google
                 </button>
                 <div className="my-4 text-center text-gray-500 border-t pt-4">
