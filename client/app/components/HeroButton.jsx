@@ -5,21 +5,27 @@ import Link from "next/link";
 
 const HeroButton = () => {
     const { data: sessionData, status } = useSession();
-    
+    console.log(sessionData)
     return (
         <div>
+            
             {status === 'authenticated' ? (
-                <button onClick={() => signOut()} className='black_btn'>
-                    Logout
-                </button>
+                <div className='flex'>
+                    <div className='px-4 text-center items-center justify-center'>
+                    Hello, {sessionData.user.email}
+                    </div>
+                    <button onClick={() => signOut()} className='black_btn'>
+                        Logout
+                    </button>
+                </div>
             ) : (
                 <div>
-                    <Link href="/login">
-                        <a className='gap-4 px-4 text-gray-500 font-semibold'>Login</a>
+                    <Link href="/login" className='gap-4 px-4 text-gray-500 font-semibold'>
+                        Login
                     </Link>
 
-                    <Link href="/register">
-                        <a className='black_btn'>Register</a>
+                    <Link href="/register" className='black_btn'>
+                        Register
                     </Link>
                 </div>
             )}

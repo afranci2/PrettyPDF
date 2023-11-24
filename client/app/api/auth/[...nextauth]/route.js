@@ -6,7 +6,7 @@ import { User } from '../../../models/User';
 import NextAuth, { getServerSession } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
-// import { MongoDBAdapter } from "@auth/mongodb-adapter"
+//import { MongoDBAdapter } from "@auth/mongodb-adapter"
 
 export const authOptions = {
   secret: process.env.SECRET,
@@ -24,14 +24,12 @@ export const authOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials, req) {
-        console.log(credentials)
         const email = credentials?.email;
         const password = credentials?.password;
 
         mongoose.connect(process.env.MONGO_URL);
         const user = await User.findOne({ email });
         const passwordOk = user && bcrypt.compareSync(password, user.password);
-        console.log(passwordOk)
         if (passwordOk) {
           console.log("YAY", user)
           return user;
