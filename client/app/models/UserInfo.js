@@ -9,6 +9,7 @@ const UserInfoSchema = new Schema({
   city: { type: String },
   country: { type: String },
   phone: { type: String },
+  pdfUploadCount: { type: Number, default: 0 }, // Add this field to track the number of uploads
   admin: { type: Boolean, default: false },
   tier: { type: String, enum: ['free', 'premium'], default: 'free' }, // Assuming you have tiers like 'free' and 'premium'
   pdfUploads: [{ type: Schema.Types.ObjectId, ref: 'PDFDocument' }], // Assuming you have a model named 'PDFDocument'
