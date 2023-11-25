@@ -78,6 +78,72 @@ module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js
 
 /***/ }),
 
+/***/ "assert":
+/*!*************************!*\
+  !*** external "assert" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
+/***/ "os":
+/*!*********************!*\
+  !*** external "os" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("os");
+
+/***/ }),
+
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -89,6 +155,39 @@ module.exports = require("path");
 
 /***/ }),
 
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "tty":
+/*!**********************!*\
+  !*** external "tty" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tty");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
 /***/ "util":
 /*!***********************!*\
   !*** external "util" ***!
@@ -97,6 +196,17 @@ module.exports = require("path");
 
 "use strict";
 module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
 
 /***/ }),
 
@@ -181,7 +291,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _contexts_FileContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contexts/FileContext */ \"(ssr)/./app/contexts/FileContext.js\");\n/* harmony import */ var next_auth_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next-auth/react */ \"(ssr)/./node_modules/next-auth/react/index.js\");\n/* harmony import */ var next_auth_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_auth_react__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _sections_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../sections/Header */ \"(ssr)/./app/sections/Header.jsx\");\n/* harmony import */ var _sections_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../sections/Footer */ \"(ssr)/./app/sections/Footer.jsx\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\n\n\nconst page = ()=>{\n    const { data: sessionData, status } = (0,next_auth_react__WEBPACK_IMPORTED_MODULE_3__.useSession)();\n    const { file } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_contexts_FileContext__WEBPACK_IMPORTED_MODULE_2__.FileContext);\n    if (status === \"loading\") {\n        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: \"Loading...\"\n        }, void 0, false, {\n            fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n            lineNumber: 13,\n            columnNumber: 12\n        }, undefined);\n    }\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_sections_Header__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {}, void 0, false, {\n                fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                lineNumber: 19,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Uploaded File Details\"\n            }, void 0, false, {\n                fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                lineNumber: 20,\n                columnNumber: 7\n            }, undefined),\n            file && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                children: [\n                    \"File Name: \",\n                    file.name\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                lineNumber: 21,\n                columnNumber: 16\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_sections_Footer__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {}, void 0, false, {\n                fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                lineNumber: 22,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n        lineNumber: 18,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (page);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9hcHAvaG9tZS9wYWdlLmpzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7OztBQUMwQztBQUNZO0FBQ1Y7QUFDSjtBQUNBO0FBRXhDLE1BQU1NLE9BQU87SUFDWCxNQUFNLEVBQUVDLE1BQU1DLFdBQVcsRUFBRUMsTUFBTSxFQUFFLEdBQUdOLDJEQUFVQTtJQUNoRCxNQUFNLEVBQUVPLElBQUksRUFBRSxHQUFHVCxpREFBVUEsQ0FBQ0MsOERBQVdBO0lBRXZDLElBQUlPLFdBQVcsV0FBVztRQUN4QixxQkFBTyw4REFBQ0U7c0JBQUk7Ozs7OztJQUNkO0lBR0EscUJBQ0UsOERBQUNBOzswQkFDQyw4REFBQ1Asd0RBQU1BOzs7OzswQkFDUCw4REFBQ1E7MEJBQUc7Ozs7OztZQUNIRixzQkFBUSw4REFBQ0c7O29CQUFFO29CQUFZSCxLQUFLSSxJQUFJOzs7Ozs7OzBCQUNqQyw4REFBQ1Qsd0RBQU1BOzs7Ozs7Ozs7OztBQUdiO0FBRUEsaUVBQWVDLElBQUlBLEVBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wcmV0dHktcGRmLy4vYXBwL2hvbWUvcGFnZS5qc3g/YTU5YiJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBjbGllbnRcIlxuaW1wb3J0IFJlYWN0LCB7IHVzZUNvbnRleHQgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBGaWxlQ29udGV4dCB9IGZyb20gJy4uL2NvbnRleHRzL0ZpbGVDb250ZXh0JztcbmltcG9ydCB7IHVzZVNlc3Npb24gfSBmcm9tICduZXh0LWF1dGgvcmVhY3QnXG5pbXBvcnQgSGVhZGVyIGZyb20gJy4uL3NlY3Rpb25zL0hlYWRlcic7XG5pbXBvcnQgRm9vdGVyIGZyb20gJy4uL3NlY3Rpb25zL0Zvb3Rlcic7XG5cbmNvbnN0IHBhZ2UgPSAoKSA9PiB7XG4gIGNvbnN0IHsgZGF0YTogc2Vzc2lvbkRhdGEsIHN0YXR1cyB9ID0gdXNlU2Vzc2lvbigpO1xuICBjb25zdCB7IGZpbGUgfSA9IHVzZUNvbnRleHQoRmlsZUNvbnRleHQpO1xuICBcbiAgaWYgKHN0YXR1cyA9PT0gJ2xvYWRpbmcnKSB7XG4gICAgcmV0dXJuIDxkaXY+TG9hZGluZy4uLjwvZGl2PjtcbiAgfVxuXG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPEhlYWRlci8+XG4gICAgICA8aDE+VXBsb2FkZWQgRmlsZSBEZXRhaWxzPC9oMT5cbiAgICAgIHtmaWxlICYmIDxwPkZpbGUgTmFtZToge2ZpbGUubmFtZX08L3A+fVxuICAgICAgPEZvb3Rlci8+XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IHBhZ2UiXSwibmFtZXMiOlsiUmVhY3QiLCJ1c2VDb250ZXh0IiwiRmlsZUNvbnRleHQiLCJ1c2VTZXNzaW9uIiwiSGVhZGVyIiwiRm9vdGVyIiwicGFnZSIsImRhdGEiLCJzZXNzaW9uRGF0YSIsInN0YXR1cyIsImZpbGUiLCJkaXYiLCJoMSIsInAiLCJuYW1lIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./app/home/page.jsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _contexts_FileContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contexts/FileContext */ \"(ssr)/./app/contexts/FileContext.js\");\n/* harmony import */ var next_auth_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next-auth/react */ \"(ssr)/./node_modules/next-auth/react/index.js\");\n/* harmony import */ var next_auth_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_auth_react__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _sections_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../sections/Header */ \"(ssr)/./app/sections/Header.jsx\");\n/* harmony import */ var _sections_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../sections/Footer */ \"(ssr)/./app/sections/Footer.jsx\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! axios */ \"(ssr)/./node_modules/axios/lib/axios.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\n\n\n// Additional imports\n // Ensure axios is installed (`npm install axios`)\nconst page = ()=>{\n    const { data: sessionData, status } = (0,next_auth_react__WEBPACK_IMPORTED_MODULE_3__.useSession)();\n    const { file } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_contexts_FileContext__WEBPACK_IMPORTED_MODULE_2__.FileContext);\n    const [uploadStatus, setUploadStatus] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"\");\n    const handleFileUpload = async ()=>{\n        if (!file) {\n            alert(\"No file is selected for upload.\");\n            return;\n        }\n        const formData = new FormData();\n        formData.append(\"file\", file);\n        setUploadStatus(\"Uploading...\");\n        try {\n            // Update the URL to your server's upload endpoint\n            const response = await axios__WEBPACK_IMPORTED_MODULE_6__[\"default\"].post(\"http://localhost:3000/api/upload\", formData, {\n                headers: {\n                    \"Content-Type\": \"multipart/form-data\"\n                }\n            });\n            // Handle response from the server\n            setUploadStatus(\"Upload successful!\");\n            console.log(response.data);\n        } catch (error) {\n            console.error(\"Upload failed:\", error);\n            setUploadStatus(\"Upload failed.\");\n        }\n    };\n    if (status === \"loading\") {\n        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: \"Loading...\"\n        }, void 0, false, {\n            fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n            lineNumber: 44,\n            columnNumber: 12\n        }, undefined);\n    }\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_sections_Header__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {}, void 0, false, {\n                fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                lineNumber: 49,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Uploaded File Details\"\n            }, void 0, false, {\n                fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                lineNumber: 50,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                        children: [\n                            \"File Name: \",\n                            file.name\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                        lineNumber: 52,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                        onClick: handleFileUpload,\n                        children: \"Upload File\"\n                    }, void 0, false, {\n                        fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                        lineNumber: 53,\n                        columnNumber: 9\n                    }, undefined),\n                    uploadStatus && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                        children: uploadStatus\n                    }, void 0, false, {\n                        fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                        lineNumber: 54,\n                        columnNumber: 26\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                lineNumber: 51,\n                columnNumber: 8\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_sections_Footer__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {}, void 0, false, {\n                fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n                lineNumber: 56,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/anthonyf/Documents/PrettyPDF/client/app/home/page.jsx\",\n        lineNumber: 48,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (page);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9hcHAvaG9tZS9wYWdlLmpzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7QUFDb0Q7QUFDRTtBQUNWO0FBQ0o7QUFDQTtBQUN4QyxxQkFBcUI7QUFDSyxDQUFDLGtEQUFrRDtBQUU3RSxNQUFNUSxPQUFPO0lBQ1gsTUFBTSxFQUFFQyxNQUFNQyxXQUFXLEVBQUVDLE1BQU0sRUFBRSxHQUFHUCwyREFBVUE7SUFDaEQsTUFBTSxFQUFFUSxJQUFJLEVBQUUsR0FBR1gsaURBQVVBLENBQUNFLDhEQUFXQTtJQUN2QyxNQUFNLENBQUNVLGNBQWNDLGdCQUFnQixHQUFHWiwrQ0FBUUEsQ0FBQztJQUVqRCxNQUFNYSxtQkFBbUI7UUFDdkIsSUFBSSxDQUFDSCxNQUFNO1lBQ1RJLE1BQU07WUFDTjtRQUNGO1FBRUEsTUFBTUMsV0FBVyxJQUFJQztRQUNyQkQsU0FBU0UsTUFBTSxDQUFDLFFBQVFQO1FBRXhCRSxnQkFBZ0I7UUFFaEIsSUFBSTtZQUNGLGtEQUFrRDtZQUNsRCxNQUFNTSxXQUFXLE1BQU1iLDZDQUFLQSxDQUFDYyxJQUFJLENBQUMsb0NBQW9DSixVQUFVO2dCQUM5RUssU0FBUztvQkFDUCxnQkFBZ0I7Z0JBQ2xCO1lBQ0Y7WUFFQSxrQ0FBa0M7WUFDbENSLGdCQUFnQjtZQUNoQlMsUUFBUUMsR0FBRyxDQUFDSixTQUFTWCxJQUFJO1FBQzNCLEVBQUUsT0FBT2dCLE9BQU87WUFDZEYsUUFBUUUsS0FBSyxDQUFDLGtCQUFrQkE7WUFDaENYLGdCQUFnQjtRQUNsQjtJQUNGO0lBRUEsSUFBSUgsV0FBVyxXQUFXO1FBQ3hCLHFCQUFPLDhEQUFDZTtzQkFBSTs7Ozs7O0lBQ2Q7SUFFQSxxQkFDRSw4REFBQ0E7OzBCQUNDLDhEQUFDckIsd0RBQU1BOzs7OzswQkFDUCw4REFBQ3NCOzBCQUFHOzs7Ozs7MEJBQ0gsOERBQUNEOztrQ0FDQSw4REFBQ0U7OzRCQUFFOzRCQUFZaEIsS0FBS2lCLElBQUk7Ozs7Ozs7a0NBQ3hCLDhEQUFDQzt3QkFBT0MsU0FBU2hCO2tDQUFrQjs7Ozs7O29CQUNsQ0YsOEJBQWdCLDhEQUFDZTtrQ0FBR2Y7Ozs7Ozs7Ozs7OzswQkFFdkIsOERBQUNQLHdEQUFNQTs7Ozs7Ozs7Ozs7QUFHYjtBQUVBLGlFQUFlRSxJQUFJQSxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcHJldHR5LXBkZi8uL2FwcC9ob21lL3BhZ2UuanN4P2E1OWIiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2UgY2xpZW50XCJcbmltcG9ydCBSZWFjdCwgeyB1c2VDb250ZXh0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IEZpbGVDb250ZXh0IH0gZnJvbSAnLi4vY29udGV4dHMvRmlsZUNvbnRleHQnO1xuaW1wb3J0IHsgdXNlU2Vzc2lvbiB9IGZyb20gJ25leHQtYXV0aC9yZWFjdCdcbmltcG9ydCBIZWFkZXIgZnJvbSAnLi4vc2VjdGlvbnMvSGVhZGVyJztcbmltcG9ydCBGb290ZXIgZnJvbSAnLi4vc2VjdGlvbnMvRm9vdGVyJztcbi8vIEFkZGl0aW9uYWwgaW1wb3J0c1xuaW1wb3J0IGF4aW9zIGZyb20gJ2F4aW9zJzsgLy8gRW5zdXJlIGF4aW9zIGlzIGluc3RhbGxlZCAoYG5wbSBpbnN0YWxsIGF4aW9zYClcblxuY29uc3QgcGFnZSA9ICgpID0+IHtcbiAgY29uc3QgeyBkYXRhOiBzZXNzaW9uRGF0YSwgc3RhdHVzIH0gPSB1c2VTZXNzaW9uKCk7XG4gIGNvbnN0IHsgZmlsZSB9ID0gdXNlQ29udGV4dChGaWxlQ29udGV4dCk7XG4gIGNvbnN0IFt1cGxvYWRTdGF0dXMsIHNldFVwbG9hZFN0YXR1c10gPSB1c2VTdGF0ZSgnJyk7XG5cbiAgY29uc3QgaGFuZGxlRmlsZVVwbG9hZCA9IGFzeW5jICgpID0+IHtcbiAgICBpZiAoIWZpbGUpIHtcbiAgICAgIGFsZXJ0KCdObyBmaWxlIGlzIHNlbGVjdGVkIGZvciB1cGxvYWQuJyk7XG4gICAgICByZXR1cm47XG4gICAgfVxuXG4gICAgY29uc3QgZm9ybURhdGEgPSBuZXcgRm9ybURhdGEoKTtcbiAgICBmb3JtRGF0YS5hcHBlbmQoJ2ZpbGUnLCBmaWxlKTtcblxuICAgIHNldFVwbG9hZFN0YXR1cygnVXBsb2FkaW5nLi4uJyk7XG5cbiAgICB0cnkge1xuICAgICAgLy8gVXBkYXRlIHRoZSBVUkwgdG8geW91ciBzZXJ2ZXIncyB1cGxvYWQgZW5kcG9pbnRcbiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgYXhpb3MucG9zdCgnaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS91cGxvYWQnLCBmb3JtRGF0YSwge1xuICAgICAgICBoZWFkZXJzOiB7XG4gICAgICAgICAgJ0NvbnRlbnQtVHlwZSc6ICdtdWx0aXBhcnQvZm9ybS1kYXRhJyxcbiAgICAgICAgfSxcbiAgICAgIH0pO1xuXG4gICAgICAvLyBIYW5kbGUgcmVzcG9uc2UgZnJvbSB0aGUgc2VydmVyXG4gICAgICBzZXRVcGxvYWRTdGF0dXMoJ1VwbG9hZCBzdWNjZXNzZnVsIScpO1xuICAgICAgY29uc29sZS5sb2cocmVzcG9uc2UuZGF0YSk7XG4gICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgIGNvbnNvbGUuZXJyb3IoJ1VwbG9hZCBmYWlsZWQ6JywgZXJyb3IpO1xuICAgICAgc2V0VXBsb2FkU3RhdHVzKCdVcGxvYWQgZmFpbGVkLicpO1xuICAgIH1cbiAgfTtcblxuICBpZiAoc3RhdHVzID09PSAnbG9hZGluZycpIHtcbiAgICByZXR1cm4gPGRpdj5Mb2FkaW5nLi4uPC9kaXY+O1xuICB9XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPEhlYWRlciAvPlxuICAgICAgPGgxPlVwbG9hZGVkIEZpbGUgRGV0YWlsczwvaDE+XG4gICAgICB7PGRpdj5cbiAgICAgICAgPHA+RmlsZSBOYW1lOiB7ZmlsZS5uYW1lfTwvcD5cbiAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXtoYW5kbGVGaWxlVXBsb2FkfT5VcGxvYWQgRmlsZTwvYnV0dG9uPlxuICAgICAgICB7dXBsb2FkU3RhdHVzICYmIDxwPnt1cGxvYWRTdGF0dXN9PC9wPn1cbiAgICAgIDwvZGl2Pn1cbiAgICAgIDxGb290ZXIgLz5cbiAgICA8L2Rpdj5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IHBhZ2U7XG4iXSwibmFtZXMiOlsiUmVhY3QiLCJ1c2VDb250ZXh0IiwidXNlU3RhdGUiLCJGaWxlQ29udGV4dCIsInVzZVNlc3Npb24iLCJIZWFkZXIiLCJGb290ZXIiLCJheGlvcyIsInBhZ2UiLCJkYXRhIiwic2Vzc2lvbkRhdGEiLCJzdGF0dXMiLCJmaWxlIiwidXBsb2FkU3RhdHVzIiwic2V0VXBsb2FkU3RhdHVzIiwiaGFuZGxlRmlsZVVwbG9hZCIsImFsZXJ0IiwiZm9ybURhdGEiLCJGb3JtRGF0YSIsImFwcGVuZCIsInJlc3BvbnNlIiwicG9zdCIsImhlYWRlcnMiLCJjb25zb2xlIiwibG9nIiwiZXJyb3IiLCJkaXYiLCJoMSIsInAiLCJuYW1lIiwiYnV0dG9uIiwib25DbGljayJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./app/home/page.jsx\n");
 
 /***/ }),
 
@@ -314,7 +424,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/next-auth","vendor-chunks/@babel","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fhome%2Fpage&page=%2Fhome%2Fpage&appPaths=%2Fhome%2Fpage&pagePath=private-next-app-dir%2Fhome%2Fpage.jsx&appDir=%2FUsers%2Fanthonyf%2FDocuments%2FPrettyPDF%2Fclient%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fanthonyf%2FDocuments%2FPrettyPDF%2Fclient&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/next-auth","vendor-chunks/@babel","vendor-chunks/@swc","vendor-chunks/axios","vendor-chunks/asynckit","vendor-chunks/debug","vendor-chunks/mime-db","vendor-chunks/form-data","vendor-chunks/follow-redirects","vendor-chunks/supports-color","vendor-chunks/proxy-from-env","vendor-chunks/ms","vendor-chunks/mime-types","vendor-chunks/has-flag","vendor-chunks/delayed-stream","vendor-chunks/combined-stream"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fhome%2Fpage&page=%2Fhome%2Fpage&appPaths=%2Fhome%2Fpage&pagePath=private-next-app-dir%2Fhome%2Fpage.jsx&appDir=%2FUsers%2Fanthonyf%2FDocuments%2FPrettyPDF%2Fclient%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fanthonyf%2FDocuments%2FPrettyPDF%2Fclient&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();
