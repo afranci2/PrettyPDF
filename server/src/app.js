@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(rateLimit); // Apply rate limiting as a global middleware
+// app.use(rateLimit); // Apply rate limiting as a global middleware
 
 // Static directory
 app.use('/uploads', express.static('uploads'));
