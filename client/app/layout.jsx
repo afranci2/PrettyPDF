@@ -1,4 +1,3 @@
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { FileProvider } from './contexts/FileContext';
 import { AppProvider } from './components/AppContext';
@@ -6,7 +5,6 @@ import { SessionProvider } from 'next-auth/react';
 
 
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Pretty PDF',
@@ -14,11 +12,13 @@ export const metadata = {
   charset: 'UTF-8',
 }
 
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      <body className={inter.className}>
+      <body >
         <FileProvider>
           <AppProvider>
 

@@ -6,8 +6,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ['Satoshi', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
+        satoshi: ['futura-pt', 'sans-serif'],
+        inter: ['futura-pt-bold', 'sans-serif'],
+        'futura-pt': ['futura-pt', 'sans-serif'],
+        // If Futura PT Bold is considered a separate family, add it like so:
+        'futura-pt-bold': ['futura-pt-bold', 'sans-serif'],
+        sans: ['futura-pt', 'sans-serif'], // This sets Futura PT as the default font
+
       }
     },
   },

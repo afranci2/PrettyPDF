@@ -6,11 +6,13 @@ import Header from '../sections/Header';
 import Footer from '../sections/Footer';
 // Additional imports
 import axios from 'axios'; // Ensure axios is installed (`npm install axios`)
+import TextDisplay from '../sections/TextDisplay'
 
 const page = () => {
   const { data: sessionData, status } = useSession();
   const { file } = useContext(FileContext);
   const [uploadStatus, setUploadStatus] = useState('');
+  const [text, setText] = useState()
 
   const handleFileUpload = async () => {
     if (!file) {
@@ -33,7 +35,8 @@ const page = () => {
 
       // Handle response from the server
       setUploadStatus('Upload successful!');
-      console.log(response.data);
+      console.log(response.data.text);
+      setText(response.data.text)
     } catch (error) {
       console.error('Upload failed:', error);
       setUploadStatus('Upload failed.');
@@ -53,6 +56,7 @@ const page = () => {
         <button onClick={handleFileUpload}>Upload File</button>
         {uploadStatus && <p>{uploadStatus}</p>}
       </div>}
+      {uploadStatus && <TextDisplay text={text}/>}
       <Footer />
     </div>
   );
