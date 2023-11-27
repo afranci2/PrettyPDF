@@ -7,6 +7,8 @@ import Footer from '../sections/Footer';
 // Additional imports
 import axios from 'axios'; // Ensure axios is installed (`npm install axios`)
 import TextDisplay from '../sections/TextDisplay'
+import DummyData from '../libs/dummyData'
+import dummyData from '../libs/dummyData';
 
 const page = () => {
   const { data: sessionData, status } = useSession();
@@ -15,10 +17,7 @@ const page = () => {
   const [text, setText] = useState()
 
   const handleFileUpload = async () => {
-    if (!file) {
-      alert('No file is selected for upload.');
-      return;
-    }
+    
 
     const formData = new FormData();
     formData.append('file', file);
@@ -40,6 +39,7 @@ const page = () => {
     } catch (error) {
       console.error('Upload failed:', error);
       setUploadStatus('Upload failed.');
+      setText(dummyData)
     }
   };
 
@@ -52,11 +52,12 @@ const page = () => {
       <Header />
       <h1>Uploaded File Details</h1>
       {<div>
-        <p>File Name: {file.name}</p>
+        {file ? <p>File Name: {file.name}</p> : <p>No file uploaded</p>}
+
         <button onClick={handleFileUpload}>Upload File</button>
         {uploadStatus && <p>{uploadStatus}</p>}
       </div>}
-      {uploadStatus && <TextDisplay text={text}/>}
+      {uploadStatus && <TextDisplay text={text} />}
       <Footer />
     </div>
   );
