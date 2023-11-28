@@ -13,3 +13,6 @@ exports.simplifyText = async (text) => {
 
   return response.data.choices[0].text;
 };
+
+
+
