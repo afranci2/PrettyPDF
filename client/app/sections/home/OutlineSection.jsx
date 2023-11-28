@@ -7,7 +7,7 @@ const OutlineSection = ({ outline }) => {
   }
 
   return (
-    <div className="w-72 h-full bg-gray-100 p-4 z-10 ">
+    <div className="w-72 h-full bg-gray-100  p-4 z-10 ">
       <ul>
         {outline.map((item, index) => (
           <li key={index} className="mb-2">
