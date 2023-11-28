@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import HeroButton from '../components/HeroButton'
-import logo from '../assets/icon.png'
+import logo from '../assets/icon2.png'
 
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
